@@ -11,4 +11,4 @@
     https://jfig27.github.io/Portfolio/index.html
 
 ## Screenshot: 
-![Screenshot of landing page](.\assets\images\01-html-css-git-homework-demo.png)
+![Screenshot of portfolio page](.\Assets\images\portfolio_screenshot.png)
