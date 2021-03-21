@@ -14,6 +14,8 @@ header {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #333a3d;
     color: #ffffff;
+    display:inline-block; 
+    width: 100%
 }
 header h1 {
     display: inline-block;
@@ -71,6 +73,10 @@ main section ul li a{
     opacity: .5;
 }
 
+a:hover{
+    color:brown;
+}
+
 .card {
     padding: 10px;
     text-align: center;
@@ -78,10 +84,12 @@ main section ul li a{
     border-width: 1px;
 }
 
-.responsive {
+ .responsive {
     max-width: 500;
     height: auto;
-}
+    border-image-width: 500px;
+} 
+
 
 
 footer {
@@ -90,4 +98,40 @@ footer {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #333a3d;
     color: #ffffff;
+}
+
+@media only screen and (max-width: 730px) {
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    header h1 body nav main{
+      width: 100%;
+      flex-direction: column;
+      text-align: center;
+    }
+    header nav{
+        display:block;
+        text-align: center;
+        flex-direction: column;
+        float: none;
+    }
+    header h1 {
+        display:block;
+        text-align: center;
+        float: none;
+    }
+    p {
+        font-size: larger;
+    }
+
+  }
+
+@media only screen and (min-width: 730px){
+
+    .brightness img:hover {
+        opacity: .5;
+        width: 600px;
+    }
 }
